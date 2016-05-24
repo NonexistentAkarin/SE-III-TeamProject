@@ -67,7 +67,7 @@ public class RepositoryDataController {
 		map.put("relatedRepos", relatedRepos);
 		map.put("scores", scores);
 		map.put("type", "REPOSITORY");
-		return new ModelAndView("repo", "result", map);
+		return new ModelAndView("repoDetail", "result", map);
 	}
 	@RequestMapping(value="/repository/score")
 	public Map userScore(HttpServletRequest request,

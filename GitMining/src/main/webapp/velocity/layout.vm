@@ -34,11 +34,11 @@
 		    document.write('<script src="/GitMining/static/bin/jquery-2.1.1.min.js"><\/script>');
 		}
 		</script>
-		<script src="/GitMining/js/jquery.timeago.min.js"></script>
-		<script src="/GitMining/js/prism.js"></script>
-		<script src="/GitMining/jade/lunr.min.js"></script>
-		<script src="/GitMining/jade/search.js"></script>
-		<script src="/GitMining/bin/materialize.js"></script>
-		<script src="/GitMining/js/init.js"></script>
+		<script src="/GitMining/static/js/jquery.timeago.min.js"></script>
+		<script src="/GitMining/static/js/prism.js"></script>
+		<script src="/GitMining/static/jade/lunr.min.js"></script>
+		<script src="/GitMining/static/jade/search.js"></script>
+		<script src="/GitMining/static/bin/materialize.js"></script>
+		<script src="/GitMining/static/js/init.js"></script>
     </body>  
 </html> 

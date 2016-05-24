@@ -36,7 +36,7 @@ public class OverviewController {
 		return new ModelAndView("overview", "result", result);
 	}
 
-	@RequestMapping(value = "/repos")
+	@RequestMapping(value = "/repo")
 	public ModelAndView getReposView(HttpServletRequest request)
 			throws Exception {
 		String tagName = request.getParameter("tag");
