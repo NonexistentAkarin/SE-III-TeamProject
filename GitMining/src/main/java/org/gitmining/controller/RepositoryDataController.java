@@ -58,7 +58,6 @@ public class RepositoryDataController {
 		
 		String fullname=repository.getFull_name().split("/")[1];
 		repository.setFull_name(fullname);
-		
 		Map<String,List> relatedRepos = repoDataService.relatedRepos(repository);
 		Map<String,Integer> scores = repoDataService.getRepositoryScoreById(repo_id);
 		History history = repoDataService.getRepositoryHistory(repo_id);
