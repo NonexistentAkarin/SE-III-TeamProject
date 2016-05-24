@@ -29,7 +29,7 @@ public class UserDataController {
 	public ModelAndView getUserView(HttpServletRequest request) throws Exception {
 		ModelMap result=new ModelMap();
 		result.put("type", "USERANALYSIS");
-		return new ModelAndView("user","result",result);
+		return new ModelAndView("users","result",result);
 	}
 	
 	@RequestMapping(value="/companyData",method=RequestMethod.GET)
