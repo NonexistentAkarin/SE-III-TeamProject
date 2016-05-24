@@ -1,0 +1,19 @@
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l4 s12">
+        <h5 class="white-text">Help GitMining Grow</h5>
+        <p class="grey-text text-lighten-4">We are a team of college students working on this project because
+          it's our big homework. Any amount would help support and continue development on this project and is
+          greatly appreciated.</p>
+        <a class="btn waves-effect waves-light red lighten-3" target="_blank"
+           href="http://114.55.35.12/SoftwareE3/SoftwareEngineering-III-TeamProject">Star</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2016 GitMining, All rights reserved.
+    </div>
+  </div>
+</footer>

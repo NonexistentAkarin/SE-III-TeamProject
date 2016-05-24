@@ -1,0 +1,148 @@
+<div ng-app="repoapp" ng-controller="generalCtrl">
+#parse('/templates/searchrepo.vm')
+<div ng-cloak style="overflow-x: scroll;" ng-controller="generalCtrl">
+		<div class="ui breadcrumb">
+			<a href="/GithubVisualization/overview" class="section">Home</a><i
+				class="right angle icon divider"></i>
+			<div class="active section">#foreach($tag in
+				$!result.searchTag) $!tag #end</div>
+			<i class="angle double icon" ng-class="{true: 'down', false: 'up'}[isHidden]" 
+			 ng-click="changeState()" style="font-size:1.5em;vertical-align:middle;" id="dropdown-icon"></i>
+		</div>
+		<div class="leftcontainer">
+			<div id="searchitem" class="ui segment">
+				<div class="firstrow">
+					<div class="head">
+						<p>Category:</p>
+					</div>
+					<div class="body">
+						<div class="ui very relaxed horizontal list">
+							#foreach($tag in $result.tags)
+							<div class="item">
+								#if($result.searchTag.get(0).equals($tag.name)) 
+								 <a id="choosetype" class="ui label teal">$!tag.name</a> 
+								#else 
+								<a class="ui label othertype">$!tag.name</a> 
+								#end
+							</div>
+							#end
+						</div>
+					</div>
+				</div>
+				
+				<div class="secondrow">
+					<div class="head">
+						<p>Language:</p>
+					</div>
+					<div class="body">
+						<div class="ui very relaxed horizontal list">
+							#foreach($lan in $result.languages)
+							<div class="item">
+								#if($result.searchTag.get(1).equals($lan))
+								  <a id="chooselan" class="ui label teal">$!lan</a>
+								#else
+							 	<a class="ui label otherlan">$!lan</a> 
+							 	#end
+							</div>
+							#end
+						</div>
+					</div>
+				</div>
+				
+				<div class="secondrow">
+					<div class="head">
+						<p>CreateTime:</p>
+					</div>
+					<div class="body">
+						<div class="ui very relaxed horizontal list">
+							#foreach($year in $result.createYears)
+							<div class="item">
+								#if($result.searchTag.get(2).equals($year))
+								  <a id="chooseyear" class="ui label teal">$!year</a>
+								#else
+							 	<a class="ui label otheryear">$!year</a> 
+							 	#end
+							</div>
+							#end
+						</div>
+					</div>
+				</div>
+
+					
+			</div>
+
+			<div id="repomenu" class="ui top menu">
+				<a class="item" ng-class="{active: isActive.isGen}" ng-click="changerepo(1)">General</a>
+				<a class="item" ng-class="{active: isActive.isStar}" ng-click="changerepo(2)">Star<i
+					class="long arrow down icon"></i></a>
+				<a class="item" ng-class="{active: isActive.isFork}" ng-click="changerepo(3)">Fork<i
+					class="long arrow down icon"></i></a>
+				<a class="item" ng-class="{active: isActive.isCon}" ng-click="changerepo(4)">Contributor<i
+					class="long arrow down icon"></i></a>
+			</div>
+		<div id="repoitems" class="ui segment">
+			<div class="repodetails" ng-repeat="repo in generalrepos | filter:query">
+					<div class="summary">
+						<h3>
+							<a href="/GithubVisualization/repository/content?id={{repo.id}}">{{repo.full_name}}</a>
+						</h3>
+						<div class="detaildes">
+							<span class="repo-list-discription">{{repo.description}}</span>
+						</div>
+						<span class="updatetime">Last updated : {{repo.update_time}}</span>
+					</div>
+					<div class="number">
+						<div class="star">
+							<div>
+								<span class="nums">{{repo.stargazers}}</span>
+							</div>
+							<span  class="tips">stars</span>
+						</div>
+						<div class="fork">
+							<div>
+								<span class="nums">{{repo.fork_num}}</span>
+							</div>
+							<span class="tips">forks</span>
+						</div>
+						<div class="contributors">
+							<div>
+								<span class="nums">{{repo.contributor}}</span>
+							</div>
+							<span  class="tips">contributors</span>
+						</div>
+					</div>
+				</div>
+				<!--pagination-->
+				<tm-pagination conf="paginationConf"></tm-pagination>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+
+		<div class="rightcontainer" ng-controller="topCtrl">
+			<h3 class="ui teal header">
+				<i class="github icon"></i>
+				<div class="content">TOP 5</div>
+			</h3>
+			<div class="ui grid" ng-repeat="repo in repos">
+				<div class="ui segment">
+					<h5 class="repo-list-name">
+						<a href="/GithubVisualization/repository/content?id={{repo.id}}">{{repo.full_name}}</a>
+					</h5>
+					<div class="detaildes">
+						<span class="repo-list-discription">{{repo.description}}</span>
+					</div>
+					<div class="repo-list-stats">
+						<i class="star icon"></i>{{repo.stargazers }}<i class="fork icon"
+							style="margin-left: 6px;"></i>{{repo.fork_num}}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</div>
+</div> 
+		<script src="/GithubVisualization/static/js/allrepos.js"></script>
+		<script src="/GithubVisualization/static/js/library/pagination.js"></script>
+		<script src="/GithubVisualization/static/js/reposervice.js"></script>
+		
+	

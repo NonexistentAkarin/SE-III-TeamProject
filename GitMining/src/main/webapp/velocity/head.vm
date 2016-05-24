@@ -1,0 +1,37 @@
+<header>
+  <div class="container">
+    <a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only"><i class="material-icons">menu</i></a></div>
+  <ul id="nav-mobile" class="side-nav fixed">
+    <li class="logo"><a id="logo-container" href="index.html" class="brand-logo">
+      <object id="front-page-logo" type="image/svg+xml" data="/GitMining/static/res/materialize.svg">Your browser does not support SVG</object></a></li>
+    <li class="search">
+      <div class="search-wrapper card">
+        <input id="search"><i class="material-icons">search</i>
+        <div class="search-results"></div>
+      </div>
+    </li>
+    <li class="bold"><a href="about.html" class="waves-effect waves-teal">About</a></li>
+    <li class="bold"><a href="repo_list.html" class="waves-effect waves-teal">Getting Started</a></li>
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li class="bold"><a class="collapsible-header  waves-effect waves-teal">Repository</a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="repo_list.html">Repositories</a></li>
+              <li><a>Statistics</a></li>
+
+            </ul>
+          </div>
+        </li>
+        <li class="bold"><a class="collapsible-header  waves-effect waves-teal">User</a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="user.html">Users</a></li>
+              <li><a>Statistics</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</header>

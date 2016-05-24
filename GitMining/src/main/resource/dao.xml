@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+	<bean id="userDao" class="org.gitmining.dao.impl.UserDaoImpl">
+		<property name="sqlSession" ref="sqlSession"></property>
+	</bean>
+	
+	<bean id="organizationDao" class="org.gitmining.dao.impl.OrganizationDaoImpl">
+		<property name="sqlSession" ref="sqlSession"></property>
+	</bean>
+	
+	<bean id="repositoryDao" class="org.gitmining.dao.impl.RepositoryDaoImpl">
+		<property name="sqlSession" ref="sqlSession"></property>
+	</bean>
+	
+	<bean id="tagDao" class="org.gitmining.dao.impl.TagDaoImpl">
+		<property name="sqlSession" ref="sqlSession"></property>
+	</bean>
+</beans>

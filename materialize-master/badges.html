@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description"
+          content="Materialize is a modern responsive CSS framework based on Material Design by Google. ">
+    <title>Badges - Materialize</title>
+    <!-- Favicons-->
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <!--  Android 5 Chrome Color-->
+    <meta name="theme-color" content="#EE6E73">
+    <!-- CSS-->
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/iso.css" rel="stylesheet">
+    <link href="css/github.css" media="all" rel="stylesheet"/>
+    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="top-nav">
+        <div class="container">
+            <div class="nav-wrapper"><a class="page-title">User</a></div>
+        </div>
+    </nav>
+    <div class="container"><a href="#" data-activates="nav-mobile"
+                              class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
+    </div>
+    <ul id="nav-mobile" class="side-nav fixed">
+        <li class="logo"><a id="logo-container" href="index.html" class="brand-logo">
+            <object id="front-page-logo" type="image/svg+xml" data="res/materialize.svg">Your browser does not support SVG</object></a></li>
+        <li class="search">
+            <div class="search-wrapper card">
+                <input id="search"><i class="material-icons">search</i>
+                <div class="search-results"></div>
+            </div>
+        </li>
+        <li class="bold"><a href="about.html" class="waves-effect waves-teal">About</a></li>
+        <li class="bold"><a href="list.html" class="waves-effect waves-teal">Getting Started</a></li>
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+                <li class="bold"><a class="collapsible-header  waves-effect waves-teal">Repository</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="color.html">Repositories</a></li>
+                            <li><a href="grid.html">Statistics</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li class="bold"><a class="collapsible-header  waves-effect waves-teal">User</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="badges.html">Users</a></li>
+                            <li><a href="buttons.html">Statistics</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</header>
+<main>
+    <div class="container">
+        <div class="row">
+            <div id="overview" class="section scrollspy">
+                <div class="col s12 m9 l10">
+                    <div class="row">
+                        <div class="col s12 m6 l5">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="promo" src="https://avatars2.githubusercontent.com/u/14267128?v=3&s=460">
+                                </div>
+                                <div class="card-content">
+                                    <table class="bordered">
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="vcard-fullname" itemprop="name">Akaza Akari</div>
+                                                <div class="vcard-username" itemprop="additionalName">NonexistentAkarin</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="join-label">Joined on </span>
+                                                <local-time class="join-date" datetime="2015-09-14T02:13:57Z" day="numeric"
+                                                            month="short" year="numeric" title="2015年9月14日 GMT+8 上午10:13">14 Sep
+                                                    2015
+                                                </local-time>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="vcard-stats border-top border-bottom border-gray-light mb-3 py-3">
+                                                    <a class="vcard-stat" href="/NonexistentAkarin/followers">
+                                                        <strong class="vcard-stat-count d-block">0</strong>
+                                                        <span class="text-muted">Followers</span>
+                                                    </a>
+                                                    <a class="vcard-stat" href="/stars">
+                                                        <strong class="vcard-stat-count d-block">7</strong>
+                                                        <span class="text-muted">Starred</span>
+                                                    </a>
+                                                    <a class="vcard-stat" href="/NonexistentAkarin/following">
+                                                        <strong class="vcard-stat-count d-block">0</strong>
+                                                        <span class="text-muted">Following</span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l7">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <ul class="tabs">
+                                            <li class="tab col s3"><a class="active" href="#creations">Creations</a></li>
+                                            <li class="tab col s3"><a href="#contributions">Contributions</a></li>
+                                        </ul>
+                                    </div>
+                                    <div id="creations" class="col s12">
+                                        <div class="columns popular-repos">
+                                            <div class="single-column">
+
+                                                <div class="boxed-group flush">
+                                                    <ul class="boxed-group-inner mini-repo-list">
+                                                        <li class="public fork ">
+                                                            <a href="/NonexistentAkarin/AutoConnect"
+                                                               class="mini-repo-list-item css-truncate">
+                                                                <svg aria-label="Forked repository"
+                                                                     class="octicon octicon-repo-forked repo-icon"
+                                                                     height="16" role="img" version="1.1"
+                                                                     viewBox="0 0 10 16" width="10">
+                                                                    <path d="M8 1c-1.11 0-2 0.89-2 2 0 0.73 0.41 1.38 1 1.72v1.28L5 8 3 6v-1.28c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72v1.78l3 3v1.78c-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72V9.5l3-3V4.72c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2zM2 4.2c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3 10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3-10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path>
+                                                                </svg>
+                              <span class="repo-and-owner css-truncate-target">
+                              <span class="repo" title="AutoConnect">AutoConnect</span>
+                              </span>
+                              <span class="stars">
+                              0
+                              <svg aria-label="stars" class="octicon octicon-star" height="16" role="img" version="1.1"
+                                   viewBox="0 0 14 16" width="14"><path
+                                      d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+                              </span>
+                                                                <span class="repo-description css-truncate-target">Android App for Internet Access in Nanjing University</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="public source ">
+                                                            <a href="/NonexistentAkarin/MoHaMoHa"
+                                                               class="mini-repo-list-item css-truncate">
+                                                                <svg aria-label="Repository"
+                                                                     class="octicon octicon-repo repo-icon" height="16"
+                                                                     role="img" version="1.1" viewBox="0 0 12 16"
+                                                                     width="12">
+                                                                    <path d="M4 9h-1v-1h1v1z m0-3h-1v1h1v-1z m0-2h-1v1h1v-1z m0-2h-1v1h1v-1z m8-1v12c0 0.55-0.45 1-1 1H6v2l-1.5-1.5-1.5 1.5V14H1c-0.55 0-1-0.45-1-1V1C0 0.45 0.45 0 1 0h10c0.55 0 1 0.45 1 1z m-1 10H1v2h2v-1h3v1h5V11z m0-10H2v9h9V1z"></path>
+                                                                </svg>
+                              <span class="repo-and-owner css-truncate-target">
+                              <span class="repo" title="MoHaMoHa">MoHaMoHa</span>
+                              </span>
+                              <span class="stars">
+                              0
+                              <svg aria-label="stars" class="octicon octicon-star" height="16" role="img" version="1.1"
+                                   viewBox="0 0 14 16" width="14"><path
+                                      d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+                              </span>
+                                                                <span class="repo-description css-truncate-target">An Android Application for MoHa</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="public source ">
+                                                            <a href="/NonexistentAkarin/Quark"
+                                                               class="mini-repo-list-item css-truncate">
+                                                                <svg aria-label="Repository"
+                                                                     class="octicon octicon-repo repo-icon" height="16"
+                                                                     role="img" version="1.1" viewBox="0 0 12 16"
+                                                                     width="12">
+                                                                    <path d="M4 9h-1v-1h1v1z m0-3h-1v1h1v-1z m0-2h-1v1h1v-1z m0-2h-1v1h1v-1z m8-1v12c0 0.55-0.45 1-1 1H6v2l-1.5-1.5-1.5 1.5V14H1c-0.55 0-1-0.45-1-1V1C0 0.45 0.45 0 1 0h10c0.55 0 1 0.45 1 1z m-1 10H1v2h2v-1h3v1h5V11z m0-10H2v9h9V1z"></path>
+                                                                </svg>
+                              <span class="repo-and-owner css-truncate-target">
+                              <span class="repo" title="Quark">Quark</span>
+                              </span>
+                              <span class="stars">
+                              0
+                              <svg aria-label="stars" class="octicon octicon-star" height="16" role="img" version="1.1"
+                                   viewBox="0 0 14 16" width="14"><path
+                                      d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+                              </span>
+                                                                <span class="repo-description css-truncate-target">An Android Application Inspired by Zhihu</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="public source ">
+                                                            <a href="/NonexistentAkarin/SoftwareEngineering-II-TeamProject"
+                                                               class="mini-repo-list-item css-truncate">
+                                                                <svg aria-label="Repository"
+                                                                     class="octicon octicon-repo repo-icon" height="16"
+                                                                     role="img" version="1.1" viewBox="0 0 12 16"
+                                                                     width="12">
+                                                                    <path d="M4 9h-1v-1h1v1z m0-3h-1v1h1v-1z m0-2h-1v1h1v-1z m0-2h-1v1h1v-1z m8-1v12c0 0.55-0.45 1-1 1H6v2l-1.5-1.5-1.5 1.5V14H1c-0.55 0-1-0.45-1-1V1C0 0.45 0.45 0 1 0h10c0.55 0 1 0.45 1 1z m-1 10H1v2h2v-1h3v1h5V11z m0-10H2v9h9V1z"></path>
+                                                                </svg>
+                              <span class="repo-and-owner css-truncate-target">
+                              <span class="repo" title="SoftwareEngineering-II-TeamProject">SoftwareEngineering-II-TeamProject</span>
+                              </span>
+                              <span class="stars">
+                              0
+                              <svg aria-label="stars" class="octicon octicon-star" height="16" role="img" version="1.1"
+                                   viewBox="0 0 14 16" width="14"><path
+                                      d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+                              </span>
+                                                                <span class="repo-description css-truncate-target">软件工程与计算II大作业</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="public source ">
+                                                            <a href="/NonexistentAkarin/Sublime-Text-Build-Systems"
+                                                               class="mini-repo-list-item css-truncate">
+                                                                <svg aria-label="Repository"
+                                                                     class="octicon octicon-repo repo-icon" height="16"
+                                                                     role="img" version="1.1" viewBox="0 0 12 16"
+                                                                     width="12">
+                                                                    <path d="M4 9h-1v-1h1v1z m0-3h-1v1h1v-1z m0-2h-1v1h1v-1z m0-2h-1v1h1v-1z m8-1v12c0 0.55-0.45 1-1 1H6v2l-1.5-1.5-1.5 1.5V14H1c-0.55 0-1-0.45-1-1V1C0 0.45 0.45 0 1 0h10c0.55 0 1 0.45 1 1z m-1 10H1v2h2v-1h3v1h5V11z m0-10H2v9h9V1z"></path>
+                                                                </svg>
+                              <span class="repo-and-owner css-truncate-target">
+                              <span class="repo" title="Sublime-Text-Build-Systems">Sublime-Text-Build-Systems</span>
+                              </span>
+                              <span class="stars">
+                              0
+                              <svg aria-label="stars" class="octicon octicon-star" height="16" role="img" version="1.1"
+                                   viewBox="0 0 14 16" width="14"><path
+                                      d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+                              </span>
+                                                                <span class="repo-description css-truncate-target">Useful Sublime Text Build Systems</span>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="contributions" class="col s12">
+                                        <div class="columns popular-repos">
+                                            <div class="single-column">
+
+                                                <div class="boxed-group flush">
+                                                    <ul class="boxed-group-inner mini-repo-list">
+                                                        <li class="public fork ">
+                                                            <a href="/NonexistentAkarin/AutoConnect"
+                                                               class="mini-repo-list-item css-truncate">
+                                                                <svg aria-label="Forked repository"
+                                                                     class="octicon octicon-repo-forked repo-icon"
+                                                                     height="16" role="img" version="1.1"
+                                                                     viewBox="0 0 10 16" width="10">
+                                                                    <path d="M8 1c-1.11 0-2 0.89-2 2 0 0.73 0.41 1.38 1 1.72v1.28L5 8 3 6v-1.28c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72v1.78l3 3v1.78c-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72V9.5l3-3V4.72c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2zM2 4.2c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3 10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3-10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path>
+                                                                </svg>
+<span class="repo-and-owner css-truncate-target">
+<span class="repo" title="AutoConnect">AutoConnect</span>
+</span>
+<span class="stars">
+0
+<svg aria-label="stars" class="octicon octicon-star" height="16" role="img" version="1.1" viewBox="0 0 14 16"
+     width="14"><path d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+</span>
+                                                                <span class="repo-description css-truncate-target">Android App for Internet Access in Nanjing University</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="public source ">
+                                                            <a href="/NonexistentAkarin/MoHaMoHa"
+                                                               class="mini-repo-list-item css-truncate">
+                                                                <svg aria-label="Repository"
+                                                                     class="octicon octicon-repo repo-icon" height="16"
+                                                                     role="img" version="1.1" viewBox="0 0 12 16"
+                                                                     width="12">
+                                                                    <path d="M4 9h-1v-1h1v1z m0-3h-1v1h1v-1z m0-2h-1v1h1v-1z m0-2h-1v1h1v-1z m8-1v12c0 0.55-0.45 1-1 1H6v2l-1.5-1.5-1.5 1.5V14H1c-0.55 0-1-0.45-1-1V1C0 0.45 0.45 0 1 0h10c0.55 0 1 0.45 1 1z m-1 10H1v2h2v-1h3v1h5V11z m0-10H2v9h9V1z"></path>
+                                                                </svg>
+<span class="repo-and-owner css-truncate-target">
+<span class="repo" title="MoHaMoHa">MoHaMoHa</span>
+</span>
+<span class="stars">
+0
+<svg aria-label="stars" class="octicon octicon-star" height="16" role="img" version="1.1" viewBox="0 0 14 16"
+     width="14"><path d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+</span>
+                                                                <span class="repo-description css-truncate-target">An Android Application for MoHa</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="public source ">
+                                                            <a href="/NonexistentAkarin/Quark"
+                                                               class="mini-repo-list-item css-truncate">
+                                                                <svg aria-label="Repository"
+                                                                     class="octicon octicon-repo repo-icon" height="16"
+                                                                     role="img" version="1.1" viewBox="0 0 12 16"
+                                                                     width="12">
+                                                                    <path d="M4 9h-1v-1h1v1z m0-3h-1v1h1v-1z m0-2h-1v1h1v-1z m0-2h-1v1h1v-1z m8-1v12c0 0.55-0.45 1-1 1H6v2l-1.5-1.5-1.5 1.5V14H1c-0.55 0-1-0.45-1-1V1C0 0.45 0.45 0 1 0h10c0.55 0 1 0.45 1 1z m-1 10H1v2h2v-1h3v1h5V11z m0-10H2v9h9V1z"></path>
+                                                                </svg>
+<span class="repo-and-owner css-truncate-target">
+<span class="repo" title="Quark">Quark</span>
+</span>
+<span class="stars">
+0
+<svg aria-label="stars" class="octicon octicon-star" height="16" role="img" version="1.1" viewBox="0 0 14 16"
+     width="14"><path d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+</span>
+                                                                <span class="repo-description css-truncate-target">An Android Application Inspired by Zhihu</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="public source ">
+                                                            <a href="/NonexistentAkarin/SoftwareEngineering-II-TeamProject"
+                                                               class="mini-repo-list-item css-truncate">
+                                                                <svg aria-label="Repository"
+                                                                     class="octicon octicon-repo repo-icon" height="16"
+                                                                     role="img" version="1.1" viewBox="0 0 12 16"
+                                                                     width="12">
+                                                                    <path d="M4 9h-1v-1h1v1z m0-3h-1v1h1v-1z m0-2h-1v1h1v-1z m0-2h-1v1h1v-1z m8-1v12c0 0.55-0.45 1-1 1H6v2l-1.5-1.5-1.5 1.5V14H1c-0.55 0-1-0.45-1-1V1C0 0.45 0.45 0 1 0h10c0.55 0 1 0.45 1 1z m-1 10H1v2h2v-1h3v1h5V11z m0-10H2v9h9V1z"></path>
+                                                                </svg>
+<span class="repo-and-owner css-truncate-target">
+<span class="repo" title="SoftwareEngineering-II-TeamProject">SoftwareEngineering-II-TeamProject</span>
+</span>
+<span class="stars">
+0
+<svg aria-label="stars" class="octicon octicon-star" height="16" role="img" version="1.1" viewBox="0 0 14 16"
+     width="14"><path d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+</span>
+                                                                <span class="repo-description css-truncate-target">软件工程与计算II大作业</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="public source ">
+                                                            <a href="/NonexistentAkarin/Sublime-Text-Build-Systems"
+                                                               class="mini-repo-list-item css-truncate">
+                                                                <svg aria-label="Repository"
+                                                                     class="octicon octicon-repo repo-icon" height="16"
+                                                                     role="img" version="1.1" viewBox="0 0 12 16"
+                                                                     width="12">
+                                                                    <path d="M4 9h-1v-1h1v1z m0-3h-1v1h1v-1z m0-2h-1v1h1v-1z m0-2h-1v1h1v-1z m8-1v12c0 0.55-0.45 1-1 1H6v2l-1.5-1.5-1.5 1.5V14H1c-0.55 0-1-0.45-1-1V1C0 0.45 0.45 0 1 0h10c0.55 0 1 0.45 1 1z m-1 10H1v2h2v-1h3v1h5V11z m0-10H2v9h9V1z"></path>
+                                                                </svg>
+<span class="repo-and-owner css-truncate-target">
+<span class="repo" title="Sublime-Text-Build-Systems">Sublime-Text-Build-Systems</span>
+</span>
+<span class="stars">
+0
+<svg aria-label="stars" class="octicon octicon-star" height="16" role="img" version="1.1" viewBox="0 0 14 16"
+     width="14"><path d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+</span>
+                                                                <span class="repo-description css-truncate-target">Useful Sublime Text Build Systems</span>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col hide-on-small-only m3 l2">
+                <div class="toc-wrapper">
+                    <div style="height: 1px;">
+                        <ul class="section table-of-contents">
+                            <li><a href="#overview">Overview</a></li>
+                            <!--<li><a href="#activity">Activity</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</main>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l4 s12">
+                <h5 class="white-text">Help GitMining Grow</h5>
+                <p class="grey-text text-lighten-4">We are a team of college students working on this project because
+                    it's our big homework. Any amount would help support and continue development on this project and is
+                    greatly appreciated.</p>
+                <a class="btn waves-effect waves-light red lighten-3" target="_blank"
+                   href="http://114.55.35.12/SoftwareE3/SoftwareEngineering-III-TeamProject">Star</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2016 GitMining, All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>if (!window.jQuery) {
+    document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>');
+}
+</script>
+<script src="js/jquery.timeago.min.js"></script>
+<script src="js/obelisk.min.js"></script>
+<script src="js/iso.js"></script>
+<script src="js/prism.js"></script>
+<script src="jade/lunr.min.js"></script>
+<script src="jade/search.js"></script>
+<script src="bin/materialize.js"></script>
+<script src="js/init.js"></script>
+</body>
+</html>
