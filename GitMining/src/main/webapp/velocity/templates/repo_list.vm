@@ -10,38 +10,10 @@
                                     <div class="collapsible-body">
 
                                         <div class="container">
-                                            <div class="chip center-align">
-                                                <img src="images/yuna.jpg" alt="Contact Person">
-                                                Jane Doe
-                                            </div>
-                                            <div class="chip">
-                                                <img src="images/yuna.jpg" alt="Contact Person">
-                                                Jane Doe
-                                            </div>
-                                            <div class="chip">
-                                                <img src="images/yuna.jpg" alt="Contact Person">
-                                                Jane Doe
-                                            </div>
-                                            <div class="chip">
-                                                <img src="images/yuna.jpg" alt="Contact Person">
-                                                Jane Doe
-                                            </div>
-                                            <div class="chip">
-                                                <img src="images/yuna.jpg" alt="Contact Person">
-                                                Jane Doe
-                                            </div>
-                                            <div class="chip">
-                                                <img src="images/yuna.jpg" alt="Contact Person">
-                                                Jane Doe
-                                            </div>
-                                            <div class="chip">
-                                                <img src="images/yuna.jpg" alt="Contact Person">
-                                                Jane Doe
-                                            </div>
-                                            <div class="chip">
-                                                <img src="images/yuna.jpg" alt="Contact Person">
-                                                Jane Doe
-                                            </div>
+                                            #foreach($tag in $result.tags)
+                                            <a class="waves-effect waves-light btn">$!tag.name</a>
+                                    
+                                           #end
                                         </div>
                                     </div>
                                 </li>
@@ -68,7 +40,7 @@
                             <div class="card">
                                 <ul class="collection">
                                     <li class="collection-item avatar">
-                                        <img src="images/yuna.jpg" alt="" class="circle">
+                                        <img src="static/images/yuna.jpg" alt="" class="circle">
                                         <span class="title">Title</span>
                                         <p>First Line <br>
                                             Second Line
@@ -131,7 +103,7 @@
                                         </a>
                                     </li>
                                     <li class="collection-item avatar">
-                                        <img src="images/yuna.jpg" alt="" class="circle">
+                                        <img src="static/images/yuna.jpg" alt="" class="circle">
                                         <span class="title">Title</span>
                                         <p>First Line <br>
                                             Second Line
@@ -194,7 +166,7 @@
                                         </a>
                                     </li>
                                     <li class="collection-item avatar">
-                                        <img src="images/yuna.jpg" alt="" class="circle">
+                                        <img src="static/images/yuna.jpg" alt="" class="circle">
                                         <span class="title">Title</span>
                                         <p>First Line <br>
                                             Second Line
@@ -257,7 +229,7 @@
                                         </a>
                                     </li>
                                     <li class="collection-item avatar">
-                                        <img src="images/yuna.jpg" alt="" class="circle">
+                                        <img src="static/images/yuna.jpg" alt="" class="circle">
                                         <span class="title">Title</span>
                                         <p>First Line <br>
                                             Second Line

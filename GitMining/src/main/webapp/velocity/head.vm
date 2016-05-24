@@ -17,7 +17,7 @@
         <li class="bold"><a class="collapsible-header  waves-effect waves-teal">Repository</a>
           <div class="collapsible-body">
             <ul>
-              <li><a href="repo_list.html">Repositories</a></li>
+              <li><a href="/GitMining/repo">Repositories</a></li>
               <li><a>Statistics</a></li>
 
             </ul>

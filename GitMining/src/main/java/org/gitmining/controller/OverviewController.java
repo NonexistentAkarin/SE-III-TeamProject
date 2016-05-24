@@ -61,7 +61,7 @@ public class OverviewController {
 		result.put("languages", languages);
 		result.put("createYears", create_years);
 		result.put("searchTag", tagNameList);
-		return new ModelAndView("allrepos", "result", result);
+		return new ModelAndView("repo_list","result",result);
 	}
 
 	@RequestMapping(value = "/repos/sort", method = RequestMethod.POST)
