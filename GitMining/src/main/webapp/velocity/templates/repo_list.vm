@@ -1,0 +1,349 @@
+    <div class="container">
+        <div class="row">
+            <div id="list" class="section scrollspy">
+                <div class="col s12 m9 l10">
+                    <div class="row">
+                        <div class="col s12">
+                            <ul class="collapsible" data-collapsible="expandable">
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">view_module</i>Category</div>
+                                    <div class="collapsible-body">
+
+                                        <div class="container">
+                                            <div class="chip center-align">
+                                                <img src="images/yuna.jpg" alt="Contact Person">
+                                                Jane Doe
+                                            </div>
+                                            <div class="chip">
+                                                <img src="images/yuna.jpg" alt="Contact Person">
+                                                Jane Doe
+                                            </div>
+                                            <div class="chip">
+                                                <img src="images/yuna.jpg" alt="Contact Person">
+                                                Jane Doe
+                                            </div>
+                                            <div class="chip">
+                                                <img src="images/yuna.jpg" alt="Contact Person">
+                                                Jane Doe
+                                            </div>
+                                            <div class="chip">
+                                                <img src="images/yuna.jpg" alt="Contact Person">
+                                                Jane Doe
+                                            </div>
+                                            <div class="chip">
+                                                <img src="images/yuna.jpg" alt="Contact Person">
+                                                Jane Doe
+                                            </div>
+                                            <div class="chip">
+                                                <img src="images/yuna.jpg" alt="Contact Person">
+                                                Jane Doe
+                                            </div>
+                                            <div class="chip">
+                                                <img src="images/yuna.jpg" alt="Contact Person">
+                                                Jane Doe
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">language</i>Language</div>
+                                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">av_timer</i>CreateTime</div>
+                                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                                </li>
+                            </ul>
+                            <div class="card">
+                                <ul class="tabs">
+                                    <li class="tab col s2"><a class="active" href="#General">
+                                       General
+                                    </a></li>
+                                    <li class="tab col s2"><a href="#Star">
+                                        <i class="material-icons center">import_export</i>Star</a></li>
+                                    <li class="tab col s2"><a href="#Fork">
+                                        <i class="material-icons center">import_export</i>Fork</a></li>
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <ul class="collection">
+                                    <li class="collection-item avatar">
+                                        <img src="images/yuna.jpg" alt="" class="circle">
+                                        <span class="title">Title</span>
+                                        <p>First Line <br>
+                                            Second Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">grade</i>
+                                                <div class="text-center">
+                                                    123
+                                                </div>
+                                            </div>
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">call_split</i>
+                                            <span class="text-center">
+                                                123
+                                            </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="collection-item avatar">
+                                        <i class="material-icons circle">folder</i>
+                                        <span class="title">Title</span>
+                                        <p>First Line <br>
+                                            Second Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">grade</i>
+                                                <div class="text-center">
+                                                    123
+                                                </div>
+                                            </div>
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">call_split</i>
+                                            <span class="text-center">
+                                                123
+                                            </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="collection-item avatar">
+                                        <i class="material-icons circle green">insert_chart</i>
+                                        <span class="title">Title</span>
+                                        <p>First Line <br>
+                                            Second Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">grade</i>
+                                                <div class="text-center">
+                                                    123
+                                                </div>
+                                            </div>
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">call_split</i>
+                                            <span class="text-center">
+                                                123
+                                            </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="collection-item avatar">
+                                        <img src="images/yuna.jpg" alt="" class="circle">
+                                        <span class="title">Title</span>
+                                        <p>First Line <br>
+                                            Second Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">grade</i>
+                                                <div class="text-center">
+                                                    123
+                                                </div>
+                                            </div>
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">call_split</i>
+                                            <span class="text-center">
+                                                123
+                                            </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="collection-item avatar">
+                                        <i class="material-icons circle">folder</i>
+                                        <span class="title">Title</span>
+                                        <p>First Line <br>
+                                            Second Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">grade</i>
+                                                <div class="text-center">
+                                                    123
+                                                </div>
+                                            </div>
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">call_split</i>
+                                            <span class="text-center">
+                                                123
+                                            </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="collection-item avatar">
+                                        <i class="material-icons circle green">insert_chart</i>
+                                        <span class="title">Title</span>
+                                        <p>First Line <br>
+                                            Second Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">grade</i>
+                                                <div class="text-center">
+                                                    123
+                                                </div>
+                                            </div>
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">call_split</i>
+                                            <span class="text-center">
+                                                123
+                                            </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="collection-item avatar">
+                                        <img src="images/yuna.jpg" alt="" class="circle">
+                                        <span class="title">Title</span>
+                                        <p>First Line <br>
+                                            Second Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">grade</i>
+                                                <div class="text-center">
+                                                    123
+                                                </div>
+                                            </div>
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">call_split</i>
+                                            <span class="text-center">
+                                                123
+                                            </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="collection-item avatar">
+                                        <i class="material-icons circle">folder</i>
+                                        <span class="title">Title</span>
+                                        <p>First Line <br>
+                                            Second Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">grade</i>
+                                                <div class="text-center">
+                                                    123
+                                                </div>
+                                            </div>
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">call_split</i>
+                                            <span class="text-center">
+                                                123
+                                            </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="collection-item avatar">
+                                        <i class="material-icons circle green">insert_chart</i>
+                                        <span class="title">Title</span>
+                                        <p>First Line <br>
+                                            Second Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">grade</i>
+                                                <div class="text-center">
+                                                    123
+                                                </div>
+                                            </div>
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">call_split</i>
+                                            <span class="text-center">
+                                                123
+                                            </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="collection-item avatar">
+                                        <img src="images/yuna.jpg" alt="" class="circle">
+                                        <span class="title">Title</span>
+                                        <p>First Line <br>
+                                            Second Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">grade</i>
+                                                <div class="text-center">
+                                                    123
+                                                </div>
+                                            </div>
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">call_split</i>
+                                            <span class="text-center">
+                                                123
+                                            </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="collection-item avatar">
+                                        <i class="material-icons circle">folder</i>
+                                        <span class="title">Title</span>
+                                        <p>First Line <br>
+                                            Second Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">grade</i>
+                                                <div class="text-center">
+                                                    123
+                                                </div>
+                                            </div>
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">call_split</i>
+                                            <span class="text-center">
+                                                123
+                                            </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="collection-item avatar">
+                                        <i class="material-icons circle green">insert_chart</i>
+                                        <span class="title">Title</span>
+                                        <p>First Line <br>
+                                            Second Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">grade</i>
+                                                <div class="text-center">
+                                                    123
+                                                </div>
+                                            </div>
+                                            <div class="col s12 l6 s6 no-padding">
+                                                <i class="material-icons">call_split</i>
+                                            <span class="text-center">
+                                                123
+                                            </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="pagination center-align">
+                                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                                <li class="active"><a href="#!">1</a></li>
+                                <li class="waves-effect"><a href="#!">2</a></li>
+                                <li class="waves-effect"><a href="#!">3</a></li>
+                                <li class="waves-effect"><a href="#!">4</a></li>
+                                <li class="waves-effect"><a href="#!">5</a></li>
+                                <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col hide-on-small-only m3 l2">
+                <div class="toc-wrapper">
+                    <div style="height: 1px;">
+                        <ul class="section table-of-contents">
+                            <li><a href="#list">Repositories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>

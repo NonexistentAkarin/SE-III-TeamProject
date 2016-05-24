@@ -11,7 +11,7 @@
       </div>
     </li>
     <li class="bold"><a href="about.html" class="waves-effect waves-teal">About</a></li>
-    <li class="bold"><a href="repo_list.html" class="waves-effect waves-teal">Getting Started</a></li>
+    <li class="bold"><a href="/GitMining/repo" class="waves-effect waves-teal">Getting Started</a></li>
     <li class="no-padding">
       <ul class="collapsible collapsible-accordion">
         <li class="bold"><a class="collapsible-header  waves-effect waves-teal">Repository</a>

@@ -5,7 +5,7 @@
       <h4 class ="header col s12 light center">Search what you are interested in on GitHub.</h4>
     </div>
     <div class="row center">
-      <a href="repo_list.html" id="download-button" class="btn-large waves-effect waves-light">Get Started</a>
+      <a href="/GitMining/repo" id="download-button" class="btn-large waves-effect waves-light">Get Started</a>
       <br>
 
     </div>
