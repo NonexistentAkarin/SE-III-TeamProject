@@ -103,6 +103,8 @@
                                         </tr>
                                         </thead>
 
+
+										#foreach( $repo in $result.relatedRepos.tag)
                                         <tbody>
                                         <tr>
                                             <td>
@@ -110,48 +112,16 @@
                                                     <a href="#!" class="secondary-content">
                                                         <i class="material-icons">send</i>
                                                     </a>
-                                                    <a href="repo.html">
-                                                        technoweenie
-                                                    </a>
-                                                    /
-                                                    <a href="repo.html">
-                                                        attachment_fu
+                                                    
+                                                    <a href="/GitMining/repository/content?id=$repo.id">
+                                                        $!repo.full_name
                                                     </a>
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td>
-                                                <div>
-                                                    <a href="#!" class="secondary-content">
-                                                        <i class="material-icons">send</i>
-                                                    </a>
-                                                    <a href="repo.html">
-                                                        technoweenie
-                                                    </a>
-                                                    /
-                                                    <a href="repo.html">
-                                                        attachment_fu
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div>
-                                                    <a href="#!" class="secondary-content">
-                                                        <i class="material-icons">send</i>
-                                                    </a>
-                                                    <a href="repo.html">
-                                                        technoweenie
-                                                    </a>
-                                                    /
-                                                    <a href="repo.html">
-                                                        attachment_fu
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                        #end
+                                        
+
                                         </tbody>
                                     </table>
                                 </div>
@@ -168,54 +138,22 @@
                                         </thead>
 
                                         <tbody>
+                                        
+                                        #foreach( $repo in $result.relatedRepos.owner)
                                         <tr>
                                             <td>
                                                 <div>
                                                     <a href="#!" class="secondary-content">
                                                         <i class="material-icons">send</i>
                                                     </a>
-                                                    <a href="repo.html">
-                                                        technoweenie
-                                                    </a>
-                                                    /
-                                                    <a href="repo.html">
-                                                        attachment_fu
+                                                  
+                                                    <a href=""/GitMining/repository/content?id=$repo.id"">
+                                                        $!{repo.full_name}
                                                     </a>
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td>
-                                                <div>
-                                                    <a href="#!" class="secondary-content">
-                                                        <i class="material-icons">send</i>
-                                                    </a>
-                                                    <a href="repo.html">
-                                                        technoweenie
-                                                    </a>
-                                                    /
-                                                    <a href="repo.html">
-                                                        attachment_fu
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div>
-                                                    <a href="#!" class="secondary-content">
-                                                        <i class="material-icons">send</i>
-                                                    </a>
-                                                    <a href="repo.html">
-                                                        technoweenie
-                                                    </a>
-                                                    /
-                                                    <a href="repo.html">
-                                                        attachment_fu
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                         #end
                                         </tbody>
                                     </table>
                                 </div>
