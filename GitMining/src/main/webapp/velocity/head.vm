@@ -10,7 +10,7 @@
         <div class="search-results"></div>
       </div>
     </li>
-    <li class="bold"><a href="about.html" class="waves-effect waves-teal">About</a></li>
+    <li class="bold"><a href="/GitMining/about" class="waves-effect waves-teal">About</a></li>
     <li class="bold"><a href="/GitMining/repo" class="waves-effect waves-teal">Getting Started</a></li>
     <li class="no-padding">
       <ul class="collapsible collapsible-accordion">

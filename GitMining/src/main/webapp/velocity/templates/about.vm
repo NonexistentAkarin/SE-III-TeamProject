@@ -41,12 +41,7 @@
       <div class="col s12 m9">
         <h1 class="header center-on-small-only">About</h1>
       </div>
-      <div class="col s12 m3">
-        <div class="buysellads-header center-on-small-only">
-          <!-- CarbonAds Zone Code -->
-          <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=materializecss" id="_carbonads_js"></script>
-        </div>
-      </div>
+     
     </div>
   </div>
 </div>
@@ -73,7 +68,7 @@
         <div class="row">
           <div class="col s12 m3 center-on-small-only">
             <div class="image-container">
-              <img src="images/dyf.png">
+              <img src="static/images/dyf.png">
             </div>
           </div>
           <div class="col s12 m9">
@@ -85,7 +80,7 @@
         <div class="row">
             <div class="col s12 m3 center-on-small-only">
               <div class="image-container">
-                <img src="images/lk.png">
+                <img src="static/images/lk.png">
               </div>
             </div>
           <div class="col s12 m9">
@@ -97,7 +92,7 @@
         <div class="row">
             <div class="col s12 m3 center-on-small-only">
               <div class="image-container">
-                <img src="images/lzh.png">
+                <img src="static/images/lzh.png">
               </div>
             </div>
           <div class="col s12 m9">
@@ -109,7 +104,7 @@
         <div class="row">
             <div class="col s12 m3 center-on-small-only">
               <div class="image-container">
-                <img src="images/csy.png">
+                <img src="static/images/csy.png">
               </div>
             </div>
           <div class="col s12 m9">

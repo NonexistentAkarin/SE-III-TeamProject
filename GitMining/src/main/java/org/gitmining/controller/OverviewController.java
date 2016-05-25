@@ -35,6 +35,12 @@ public class OverviewController {
 		result.put("tags", firsTags);
 		return new ModelAndView("overview", "result", result);
 	}
+	
+	@RequestMapping(value = "/about")
+	public ModelAndView getAboutView(HttpServletRequest request)
+			throws Exception {
+		return new ModelAndView("about");
+	}
 
 	@RequestMapping(value = "/repo")
 	public ModelAndView getReposView(HttpServletRequest request)

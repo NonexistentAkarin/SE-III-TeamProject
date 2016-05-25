@@ -11,19 +11,37 @@
 
                                         <div class="container">
                                             #foreach($tag in $result.tags)
-                                            <a class="waves-effect waves-light btn">$!tag.name</a>
-                                    
+                                            <a>
+                                            <input name="group1" type="radio" id="ChooseCategory" />
+                                            <label for="ChooseCategory">$!tag.name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      										</a>
                                            #end
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="collapsible-header"><i class="material-icons">language</i>Language</div>
-                                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                                    <div class="collapsible-body"><div class="container">
+                                            #foreach($lan in $result.languages)
+                                            <a>
+                                            <input name="group2" type="radio" id="ChooseLanguage" />
+                                            <label for="ChooseLanguage">$!lan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      										</a>
+                                           #end
+                                        </div>
+                                        </div>
                                 </li>
                                 <li>
                                     <div class="collapsible-header"><i class="material-icons">av_timer</i>CreateTime</div>
-                                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                                    <div class="collapsible-body"><div class="container">
+                                            #foreach($year in $result.createYears)
+                                            <a>
+                                            <input name="group3" type="radio" id="ChooseTime" />
+                                            <label for="ChooseTime">$!year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      										</a>
+                                           #end
+                                        </div>
+                                        </div>
                                 </li>
                             </ul>
                             <div class="card">
