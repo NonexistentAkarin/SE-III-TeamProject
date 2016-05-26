@@ -122,5 +122,6 @@
          <script src="/GitMining/static/js/allrepos.js"></script>
 		<script src="/GitMining/static/js/library/pagination.js"></script>
 		<script src="/GitMining/static/js/reposervice.js"></script>
+
    
 		
