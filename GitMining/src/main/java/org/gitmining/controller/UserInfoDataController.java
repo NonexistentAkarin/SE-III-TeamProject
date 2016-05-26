@@ -56,7 +56,7 @@ public class UserInfoDataController {
 		result.put("user", user);
 		result.put("score", userScores);
 		result.put("repos", relatedRepos);
-		return new ModelAndView("userinfo","result",result);
+		return new ModelAndView("user","result",result);
 	}	
 	
 	@RequestMapping(value="/user/top")
