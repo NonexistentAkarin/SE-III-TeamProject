@@ -71,4 +71,13 @@ public class UserInfoDataController {
 		result.put("users", users);
 		return new ModelAndView("useroverview","result",result);
 	}
+
+	@RequestMapping(value="/users")
+	public ModelAndView getUsersView(HttpServletRequest request) throws Exception {
+		ModelMap result=new ModelMap();
+        result.put("type", "USER");
+        List<User> users = userInfoService.getTop20Users();
+		result.put("users", users);
+		return new ModelAndView("users","result",result);
+	}
 }

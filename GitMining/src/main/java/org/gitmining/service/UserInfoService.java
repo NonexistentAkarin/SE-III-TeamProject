@@ -10,5 +10,6 @@ public interface UserInfoService {
 	public Map getUserScore(int id);
 	public Map getRecommendRepos(User user);
 	public List<User> getTop20Users();
+	public List<User> getAllUsers();
 
 }
