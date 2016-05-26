@@ -137,21 +137,29 @@
                                 <ul class="collection">
                                     <li class="collection-item avatar">
                                         <img src="images/yuna.jpg" alt="" class="circle">
-                                        <span class="title">Title</span>
-                                        <p>First Line <br>
-                                            Second Line
+                                        <span class="title">
+                                            <a href="/GitMining/repository/content?id={{repo.id}}">{{repo.full_name}}</a>
+                                        </span>
+                                        <p>{{repo.description}} <br>
+                                            Last updated : {{repo.update_time}}
                                         </p>
                                         <a href="#!" class="secondary-content">
-                                            <div class="col s12 l6 s6 no-padding">
+                                            <div class="col s12 l4 s4 no-padding">
                                                 <i class="material-icons">grade</i>
                                                 <div class="text-center">
-                                                    123
+                                                    {{repo.stargazers}}
                                                 </div>
                                             </div>
-                                            <div class="col s12 l6 s6 no-padding">
+                                            <div class="col s12 l4 s4 no-padding">
                                                 <i class="material-icons">call_split</i>
                                             <span class="text-center">
-                                                123
+                                                {{repo.fork_num}}
+                                            </span>
+                                            </div>
+                                            <div class="col s12 l4 s4 no-padding">
+                                                <i class="material-icons">call_split</i>
+                                            <span class="text-center">
+                                                {{repo.contributor}}
                                             </span>
                                             </div>
                                         </a>
