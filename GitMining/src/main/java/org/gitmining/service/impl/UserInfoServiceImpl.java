@@ -80,11 +80,24 @@ public class UserInfoServiceImpl implements UserInfoService {
 		
 		return getTop20UsersStub();
 	}
-	
+
+
 	public List<User> getTop20UsersStub(){
 		List<User> users = userDao.selectTOP20Users();
 		
 		return users;
 	}
 
+	@Override
+	public List<User> getAllUsers() {
+		// TODO Auto-generated method stub
+
+		return getAllUsersStub();
+	}
+
+	public List<User> getAllUsersStub() {
+		List<User> users = userDao.selectAllUsers();
+
+		return users;
+	}
 }

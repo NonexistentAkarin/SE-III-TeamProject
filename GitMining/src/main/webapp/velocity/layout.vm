@@ -28,8 +28,9 @@
 	    <link href="/GitMining/static/css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
 	    <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
 	    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	    <script src="/GitMining/static/js/library/angular.min.js"></script>
-	    <script src="/GitMining/static/js/library/jquery-1.11.3.js"></script>
+
+        <script src="/GitMining/static/js/library/angular.min.js"></script>
+        <script src="/GitMining/static/js/library/jquery-1.11.3.js"></script>
 	</head>
     <body>
 		#parse('head.vm')  
@@ -54,5 +55,5 @@
 		<script src="/GitMining/static/jade/search.js"></script>
 		<script src="/GitMining/static/bin/materialize.js"></script>
 		<script src="/GitMining/static/js/init.js"></script>
-    </body>  
+	</body>
 </html> 
