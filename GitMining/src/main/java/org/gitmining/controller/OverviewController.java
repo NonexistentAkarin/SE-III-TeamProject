@@ -42,13 +42,19 @@ public class OverviewController {
 		return new ModelAndView("about");
 	}
 
-	@RequestMapping(value = "/repo")
+	@RequestMapping(value = "/repos")
 	public ModelAndView getReposView(HttpServletRequest request)
 			throws Exception {
 		String tagName = request.getParameter("tag");
 		String language = request.getParameter("lan");
 		String year = request.getParameter("year");
-		System.out.println(request.getParameter("tag"));
+		if(year==null||language==null||tagName==null)
+		{
+			year="all";
+			language="all";
+			tagName="ActiveRecord";
+		}
+		
 		List<String> tagNameList = new ArrayList<String>();
 		tagNameList.add(tagName);
 		tagNameList.add(language);
@@ -58,8 +64,8 @@ public class OverviewController {
 		result.put("type", "REPOSITORY");
 		List<Tag> firsTags = (ArrayList<Tag>) repoByTagDataService
 				.listFirstTag();
-		// List<Tag> secondTags = (ArrayList<Tag>) repoByTagDataService
-		// .listSecondTagByMulti(tagNameList);
+		 List<Tag> secondTags = (ArrayList<Tag>) repoByTagDataService
+		 .listSecondTagByMulti(tagNameList);
 		String[] languages = Choice.getLanguages();
 		String[] create_years = Choice.getCreate_years();
 
@@ -77,20 +83,31 @@ public class OverviewController {
 		Map<String, Object> result = new HashMap<String, Object>();
 		int currentPage = Integer.parseInt(request.getParameter("pageIndex"));
 		int itemsperPage = Integer.parseInt(request.getParameter("pageSize"));
+		
 		String tag = request.getParameter("tag");
 		String language = request.getParameter("language");
 		String year = request.getParameter("year");
+		if(tag.equals("")||language.equals("")||year.equals(""))
+		{
+			year="all";
+			language="all";
+			tag="ActiveRecord";
+			
+		}
 		List<String> tagNameList = new ArrayList<String>();
 		tagNameList.add(tag);
 		tagNameList.add(language);
 		tagNameList.add(year);
-
 		int type = Integer.parseInt(request.getParameter("type"));
 		List<Repository> repos = new ArrayList<Repository>();
+		
 		switch (type) {
+		
 		case 1:
+			
 			repos = repoByTagDataService.searchAndSortByTagPagination(
 					tagNameList, Sort.GENERAL, currentPage, itemsperPage);
+			System.out.println("s1   "+type);
 			break;
 		case 2:
 			repos = repoByTagDataService.searchAndSortByTagPagination(
@@ -107,12 +124,12 @@ public class OverviewController {
 		default:
 			break;
 		}
-
 		int totalCount = repoByTagDataService.resultCount(tagNameList,
 				Sort.GENERAL);
 		result.put("count", totalCount);
 		result.put("repos", repos);
 		result.put("count", totalCount);
+		
 		return result;
 	}
 

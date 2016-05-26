@@ -37,9 +37,10 @@ public class RepoByTagDataServiceImpl implements
 		// int tag_id = tagDao.getTagID(tagName);
 		// List<RepoTagPair> repoTagPairs = (List<RepoTagPair>)
 		// repositoryDao.getRepoTagPairsByTagID(tag_id);
-
+		
 		List<SimpleRepo> simpleRepos = new ArrayList<SimpleRepo>();
 		if (type == Sort.GENERAL) {
+			
 			simpleRepos = repositoryDao.getSimpleReposByTagName(tagName);
 		} else if (type == Sort.STAR) {
 			simpleRepos = repositoryDao.getSimpleReposByTagNameAndSort(tagName,
@@ -113,6 +114,7 @@ public class RepoByTagDataServiceImpl implements
 			simpleRepos.get(i).setUpdate_time(
 					simpleRepos.get(i).getUpdate_time().substring(0, 10));
 		}
+        System.out.println("s2     "+simpleRepos.size());
 		return simpleRepos;
 	}
 

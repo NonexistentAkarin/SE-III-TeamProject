@@ -1,0 +1,120 @@
+<div class="container">
+    <div class="row">
+        <div id="list" class="section scrollspy">
+            <div class="col s12 m9 l10">
+                <div class="row">
+                    <div class="col s12">
+                        <ul class="collapsible" data-collapsible="expandable">
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">view_module</i>Category</div>
+                                <div class="collapsible-body">
+
+                                    <div class="container">
+                                        #foreach($tag in $result.tags)
+                                        <a>
+                                            <input name="group1" type="radio" id="ChooseCategory" />
+                                            <label for="ChooseCategory">$!tag.name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                        </a>
+                                        #end
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">language</i>Language</div>
+                                <div class="collapsible-body"><div class="container">
+                                    #foreach($lan in $result.languages)
+                                    <a>
+                                        <input name="group2" type="radio" id="ChooseLanguage" />
+                                        <label for="ChooseLanguage">$!lan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                    </a>
+                                    #end
+                                </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">av_timer</i>CreateTime</div>
+                                <div class="collapsible-body"><div class="container">
+                                    #foreach($year in $result.createYears)
+                                    <a>
+                                        <input name="group3" type="radio" id="ChooseTime" />
+                                        <label for="ChooseTime">$!year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                    </a>
+                                    #end
+                                </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card">
+                            <ul class="tabs">
+                                <li class="tab col s2"><a class="active" href="#General">
+                                    General
+                                </a></li>
+                                <li class="tab col s2"><a href="#Star">
+                                    <i class="material-icons center">import_export</i>Star</a></li>
+                                <li class="tab col s2"><a href="#Fork">
+                                    <i class="material-icons center">import_export</i>Fork</a></li>
+                                <li class="tab col s2"><a href="#Contributor">
+                                    <i class="material-icons center">import_export</i>Contributor</a></li>
+                            </ul>
+                        </div>
+                        <div class="card">
+
+                            <div id="repoitems" class="ui segment">
+                                <div class="repodetails" ng-repeat="repo in generalrepos | filter:query">
+                                    <div class="summary">
+                                        <h3>
+                                            <a href="/GitMining/repository/content?id={{repo.id}}">{{repo.full_name}}</a>
+                                        </h3>
+                                        <div class="detaildes">
+                                            <span class="repo-list-discription">{{repo.description}}</span>
+                                        </div>
+                                        <span class="updatetime">Last updated : {{repo.update_time}}</span>
+                                    </div>
+                                    <div class="number">
+                                        <div class="star">
+                                            <div>
+                                                <span class="nums">{{repo.stargazers}}</span>
+                                            </div>
+                                            <span  class="tips">stars</span>
+                                        </div>
+                                        <div class="fork">
+                                            <div>
+                                                <span class="nums">{{repo.fork_num}}</span>
+                                            </div>
+                                            <span class="tips">forks</span>
+                                        </div>
+                                        <div class="contributors">
+                                            <div>
+                                                <span class="nums">{{repo.contributor}}</span>
+                                            </div>
+                                            <span  class="tips">contributors</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--pagination-->
+                                <tm-pagination conf="paginationConf"></tm-pagination>
+                                <div style="clear: both;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col hide-on-small-only m3 l2">
+                <div class="toc-wrapper">
+                    <div style="height: 1px;">
+                        <ul class="section table-of-contents">
+                            <li><a href="#list">Repositories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="/GitMining/static/js/allrepos.js"></script>
+<script src="/GitMining/static/js/library/pagination.js"></script>
+<script src="/GitMining/static/js/reposervice.js"></script>

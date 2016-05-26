@@ -11,13 +11,13 @@
       </div>
     </li>
     <li class="bold"><a href="/GitMining/about" class="waves-effect waves-teal">About</a></li>
-    <li class="bold"><a href="/GitMining/repo" class="waves-effect waves-teal">Getting Started</a></li>
+    <li class="bold"><a href="/GitMining/repos" class="waves-effect waves-teal">Getting Started</a></li>
     <li class="no-padding">
       <ul class="collapsible collapsible-accordion">
         <li class="bold"><a class="collapsible-header  waves-effect waves-teal">Repository</a>
           <div class="collapsible-body">
             <ul>
-              <li><a href="/GitMining/repo">Repositories</a></li>
+              <li><a href="/GitMining/repos">Repositories</a></li>
               <li><a>Statistics</a></li>
 
             </ul>
